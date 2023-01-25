@@ -19,33 +19,26 @@
         </style>
     </head>
     <body>
-        <?php
-            function generate_random_letters() {
-                $length = 6;
-                $result = substr(str_shuffle("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"), 0, $length);
-
-                header('Location: /plan.php?='.urlencode($result));
-            }
-            // echo "<h1>Advising Plan {$result}</h1>"
-        ?>
         <!-- <h1 id="advisingPlanNum">Advising Plan <?php //echo $result ?></h1> -->
-        <form>
+        <label for="message">Advisor:</label>
+        <textarea name="advisor" id="advisor" rows="1" cols="60"></textarea>
+        <form action="confirm.php" method="post" id="advising-section">
             <div class="grid-container">
                 <div class="grid-item">
                     <h2>Fall</h2>
-                    <textarea name="message" rows="5" cols="60"></textarea>
+                    <textarea name="fallQ" id="fallQ" rows="5" cols="60"></textarea>
                 </div>
                 <div class="grid-item">
                     <h2>Winter</h2>
-                    <textarea name="message" rows="5" cols="60"></textarea>
+                    <textarea name="winterQ" id="winterQ"rows="5" cols="60"></textarea>
                 </div>
                 <div class="grid-item">
                     <h2>Spring</h2>
-                    <textarea name="message" rows="5" cols="60"></textarea>
+                    <textarea name="springQ" id="springQ"rows="5" cols="60"></textarea>
                 </div>
                 <div class="grid-item">
                     <h2>Summer</h2>
-                    <textarea name="message" rows="5" cols="60"></textarea>
+                    <textarea name="summerQ" id="summerQ"rows="5" cols="60"></textarea>
                 </div>
             </div>
         </form>

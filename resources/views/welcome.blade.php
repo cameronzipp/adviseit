@@ -20,8 +20,8 @@
     </head>
     <body>
         <h1>Advise-It Home</h1>
-        <!--<button type="button" id="newPlan" onclick="makeid()">Create new plan</button>-->
-        <a href="{{ url('/plan') }}" class="text-sm underline" id="newPlan">Create a new Plan</a>
+        <!-- <button type="button" id="newPlan" onclick="makeid()">Create new plan</button> -->
+        <a href="{{ route('plan') }}" class="text-sm underline" id="newPlan">Create a new Plan</a>
         <!-- <?php //generate_random_letters() ?> -->
 
 
@@ -31,6 +31,6 @@
             <input type="submit" name="newPlan" id="newPlan" value="Create a new Plan">
 
         </form> -->
-
+        
     </body>
 </html>
